@@ -1,0 +1,8 @@
+version: '2'
+services:
+  graphdb:
+    image: dhlabbasel/graphdb-free
+    volumes:
+      - ./data:/opt/graphdb/home
+    ports:
+      - 7200:7200
